@@ -380,7 +380,7 @@ footer h3 {              /* Titles in the foter */
 button.search-button-one {      /* Tablet and Phone search button */
     display: none;
     padding: 16px 17px;
-    border-radius: 0 17px 17px 0;
+    border-radius: 17px 17px 17px 17px;
     background-color: #0065FC;
     color: white;
     font-weight: 500;

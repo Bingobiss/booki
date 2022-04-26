@@ -1,18 +1,18 @@
 @media (max-width: 991px) {
-    button.search-button-one {      /* Tablet and Phone search button */
+    button.search-button-one {      /* Show the button for tablet and phone */
         display: flex;
     }
     
-    button.search-button-two {     /* Desktop search button */
+    button.search-button-two {     /* Hide desktop button */
         display: none;
     }
 
     .filters span {
-        font-size: 15px;
+        font-size: 15px;     /* Change filter section dimensions */
         margin-right: 8px;
     }
 
-    i.filter-icon {      /* Filters icons specificities */
+    i.filter-icon {      /* Change filter icons size */
         width: 35px;
         height: 35px;
         min-width: 35px;
@@ -20,42 +20,41 @@
         margin: 0 8px 0 -2px;
     }
 
-    .filters div {
+    .filters div {          /* Change filter elements size */
         height: 35px;
         margin-left: 5px;
     }
 
-    div.filters h2 {    /* Filters section name specificities */
+    div.filters h2 {    /* Change filter section title*/
         font-size: 15px;
-        font-weight: 900;
         padding: 8px 5px;
     }
 
     #hosting {
-        flex-direction: column-reverse;
+        flex-direction: column-reverse; /*Invert hosting section and popular section */
     }
 
-    .hosting-list {
-        margin-top: 25px;
+    .hosting-list {        
+        margin-top: 25px;  /* Change hosting elements size */
         width: 100%;
     }
 
     .hosting-popular {
-        margin: 5px 0 0 0;
+        margin: 5px 0 0 0;   /* change popular elements size */
         width: 100%;
     }
 
     article.article-list {
-        min-height: 215px;
+        min-height: 215px;  /* Set a minimum height for hosting elements */
     }
 
-    article.article-list a {
+    article.article-list a {    /* Adjust text in hosting elements */
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
 
-    .show-more {
+    .show-more {     /* Delete the margin for "Afficher plus" */
         margin: 0;
     }
 
