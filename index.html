@@ -3,314 +3,321 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Booki - OpenClassrooms</title>
 </head>
-<body>
-    <header class="header_section">
+<body class="page-center">
+    <header class="header-section page-margin flex-space-between">
         <a href="#"><img src="images/logo/Booki.png" alt="Booki"></a>
         <nav>
-            <ul class="navList">
-                <li><a href="#hosting" data-active="true">Hébergements</a></li>
-                <li><a href="#activity" data-active="false">Activités</a></li>
+            <ul class="nav-list flex-space-between margin-zero">
+                <li><a href="#hosting">Hébergements</a></li>
+                <li><a href="#activity">Activités</a></li>
             </ul>
         </nav>
     </header>
-    <main class="main">
+    <main class="main page-margin">
         <section class="search">
             <header>
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <h1 class="title margin-zero">Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
             </header>
-            <form action="">
-                <span class="locationDot">
-                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            <form>
+                <span class="location-dot back-gray">
+                    <i class="fa-solid fa-location-dot"></i>
                 </span>
                 <input type="search" placeholder="Marseille, France">
-                <button type="submit" class="searchButtonOne">
-                    <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                <button type="submit" class="search-button-one">
+                    <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
-                <button type="submit" class="searchButtonTwo">
-                    <span class="searchButton">Rechercher</span>
+                <button type="submit" class="search-button-two">
+                    <span>Rechercher</span>
                 </button>
             </form>
             <div class="filters">
-                <h2>Filtres</h2>
-                <div>
-                    <i class="fa-solid fa-money-bill-wave filterIcon" aria-hidden="true"></i>
+                <h2 class="margin-zero">Filtres</h2>
+                <div class="filter-hover">
+                    <i class="fa-solid fa-money-bill-wave filter-icon"></i>
                     <span>Économique</span>
                 </div>
-                <div >
-                    <i class="fa-solid fa-child-reaching filterIcon" aria-hidden="true"></i>
+                <div class="filter-hover">
+                    <i class="fa-solid fa-child-reaching filter-icon"></i>
                     <span>Familial</span>
                 </div>
-                <div>
-                    <i class="fa-solid fa-heart filterIcon" aria-hidden="true"></i>
+                <div class="filter-hover">
+                    <i class="fa-solid fa-heart filter-icon"></i>
                     <span>Romantique</span>
                 </div>
-                <div>
-                    <i class="fa-solid fa-dog filterIcon" aria-hidden="true"></i>
+                <div class="filter-hover">
+                    <i class="fa-solid fa-dog filter-icon"></i>
                     <span>Animaux autorisés</span>
                 </div>
             </div>
-            <div class="infoAbout">
+            <div class="info-about">
                 <div>
-                    <i class="fa-solid fa-info" aria-hidden="true"></i>
+                    <i class="fa-solid fa-info"></i>
                 </div>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </section>
-        <section class="hosting" id="hosting">
-            <div class="hostingList hostingGeneral">
+        <section class="display-flex" id="hosting">
+            <div class="hosting-list hosting-general back-gray">
                 <header>
                     <h2>Hébergements à Marseille</h2>
                 </header>
-                <div class="articles">
-                    <article class="articleGeneral articleList">
-                        <a href="#">
-                            <figure>
-                                <img src="images/hebergements/4_small/marcus.jpg" alt="Lit superposé avec vue sur la ville">
+                <div class="articles flex-space-between">
+                    <article class="article-general article-list box-shadow-one hosting-hover">
+                        <a href="#" class="full-width">
+                            <figure class="margin-zero">
+                                <img src="images/hebergements/4_small/marcus.jpg" alt="Lit superposé avec vue sur la ville" class="full-width">
                             </figure>
-                            <h3 class="colorBlack">Auberge La Cannebière</h3>
-                            <p class="colorBlack">Nuit à partir de <span class="price">25€</span></p>
+                            <h3 class="color-black">Auberge La Cannebière</h3>
+                            <p class="color-black">Nuit à partir de <span class="bold-price">25€</span></p>
                             <ul>
                                 <li>
-                                    <i data-active="true" class="fa-solid fa-star testBleu" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star color-blue"></i>
                                 </li>
                                 <li>
-                                    <i data-active="true" class="fa-solid fa-star testBleu" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star color-blue"></i>
                                 </li>
                                 <li>
-                                    <i data-active="true" class="fa-solid fa-star testBleu" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star color-blue"></i>
                                 </li>
                                 <li>
-                                    <i data-active="true" class="fa-solid fa-star testBleu" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star color-blue"></i>
                                 </li>
                                 <li>
-                                    <i data-active="false" class="fa-solid fa-star testGray" aria-hidden="true"></i>
+                                    <i data-active="false" class="fa-solid fa-star color-gray"></i>
                                 </li>
                             </ul>
                         </a>
                     </article>
-                    <article class="articleGeneral articleList">
-                        <a href="#">
-                            <figure>
-                                <img src="images/hebergements/4_small/fred.jpg" alt="Chambre grise avec deux lits">
+                    <article class="article-general article-list box-shadow-one hosting-hover">
+                        <a href="#" class="full-width">
+                            <figure class="margin-zero">
+                                <img src="images/hebergements/4_small/fred.jpg" alt="Chambre grise avec deux lits" class="full-width">
                             </figure>
-                            <h3 class="colorBlack">Hôtel du port</h3>
-                            <p class="colorBlack">Nuit à partir de <span class="price">52€</span></p>
+                            <h3 class="color-black">Hôtel du port</h3>
+                            <p class="color-black">Nuit à partir de 52<span class="bold-price">€</span></p>
                             <ul>
                                 <li>
-                                    <i data-active="true" class="fa-solid fa-star testBleu" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star color-blue"></i>
                                 </li>
                                 <li>
-                                    <i data-active="true" class="fa-solid fa-star testBleu" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star color-blue"></i>
                                 </li>
                                 <li>
-                                    <i data-active="true" class="fa-solid fa-star testBleu" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star color-blue"></i>
                                 </li>
                                 <li>
-                                    <i data-active="true" class="fa-solid fa-star testBleu" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star color-blue"></i>
                                 </li>
                                 <li>
-                                    <i data-active="true" class="fa-solid fa-star testBleu" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star color-blue"></i>
                                 </li>
                             </ul>
                         </a>
                     </article>
-                    <article class="articleGeneral articleList">
-                        <a href="#">
-                            <figure>
-                                <img src="images/hebergements/4_small/reisetopia.jpg" alt="Chambre avec miroir et tapisserie">
+                    <article class="article-general article-list box-shadow-one hosting-hover">
+                        <a href="#" class="full-width">
+                            <figure class="margin-zero">
+                                <img src="images/hebergements/4_small/reisetopia.jpg" alt="Chambre avec miroir et tapisserie" class="full-width">
                             </figure>
-                            <h3 class="colorBlack">Hôtel Les mouettes</h3>
-                            <p class="colorBlack">Nuit à partir de <span class="price">76€</span></p>
+                            <h3 class="color-black">Hôtel Les mouettes</h3>
+                            <p class="color-black">Nuit à partir de 76<span class="bold-price">€</span></p>
                             <ul>
                                 <li>
-                                    <i data-active="true" class="fa-solid fa-star testBleu" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star color-blue"></i>
                                 </li>
                                 <li>
-                                    <i data-active="true" class="fa-solid fa-star testBleu" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star color-blue"></i>
                                 </li>
                                 <li>
-                                    <i data-active="true" class="fa-solid fa-star testBleu" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star color-blue"></i>
                                 </li>
                                 <li>
-                                    <i data-active="true" class="fa-solid fa-star testBleu" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star color-blue"></i>
                                 </li>
                                 <li>
-                                    <i data-active="false" class="fa-solid fa-star testGray" aria-hidden="true"></i>
+                                    <i data-active="false" class="fa-solid fa-star color-gray"></i>
                                 </li>
                             </ul>
                         </a>
                     </article>
-                    <article class="articleGeneral articleList">
-                        <a href="#">
-                            <figure>
-                                <img src="images/hebergements/4_small/annie.jpg" alt="Chambre avec tableau de la mer">
+                    <article class="article-general article-list box-shadow-one hosting-hover">
+                        <a href="#" class="full-width">
+                            <figure class="margin-zero">
+                                <img src="images/hebergements/4_small/annie.jpg" alt="Chambre avec tableau de la mer" class="full-width">
                             </figure>
-                            <h3 class="colorBlack">Hôtel de la mer</h3>
-                            <p class="colorBlack">Nuit à partir de <span class="price">46€</span></p>
+                            <h3 class="color-black">Hôtel de la mer</h3>
+                            <p class="color-black">Nuit à partir de 46<span class="bold-price">€</span></p>
                             <ul>
                                 <li>
-                                    <i data-active="true" class="fa-solid fa-star testBleu" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star color-blue"></i>
                                 </li>
                                 <li>
-                                    <i data-active="true" class="fa-solid fa-star testBleu" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star color-blue"></i>
                                 </li>
                                 <li>
-                                    <i data-active="true" class="fa-solid fa-star testBleu" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star color-blue"></i>
                                 </li>
                                 <li>
-                                    <i data-active="false" class="fa-solid fa-star testGray" aria-hidden="true"></i>
+                                    <i data-active="false" class="fa-solid fa-star color-gray"></i>
                                 </li>
                                 <li>
-                                    <i data-active="false" class="fa-solid fa-star testGray" aria-hidden="true"></i>
+                                    <i data-active="false" class="fa-solid fa-star color-gray"></i>
                                 </li>
                             </ul>
                         </a>
                     </article>
-                    <article class="articleGeneral articleList">
-                        <a href="#">
-                            <figure>
-                                <img src="images/hebergements/4_small/nicate.jpg" alt="Chambre avec quatre lits en bois superposés">
+                    <article class="article-general article-list box-shadow-one hosting-hover">
+                        <a href="#" class="full-width">
+                            <figure class="margin-zero">
+                                <img src="images/hebergements/4_small/nicate.jpg" alt="Chambre avec quatre lits en bois superposés" class="full-width">
                             </figure>
-                            <h3 class="colorBlack">Auberge Le Panier</h3>
-                            <p class="colorBlack">Nuit à partir de <span class="price">23€</span></p>
+                            <h3 class="color-black">Auberge Le Panier</h3>
+                            <p class="color-black">Nuit à partir de <span class="bold-price">23€</span></p>
                             <ul>
                                 <li>
-                                    <i data-active="true" class="fa-solid fa-star testBleu" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star color-blue"></i>
                                 </li>
                                 <li>
-                                    <i data-active="true" class="fa-solid fa-star testBleu" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star color-blue"></i>
                                 </li>
                                 <li>
-                                    <i data-active="true" class="fa-solid fa-star testBleu" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star color-blue"></i>
                                 </li>
                                 <li>
-                                    <i data-active="true" class="fa-solid fa-star testBleu" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star color-blue"></i>
                                 </li>
                                 <li>
-                                    <i data-active="false" class="fa-solid fa-star testGray" aria-hidden="true"></i>
+                                    <i data-active="false" class="fa-solid fa-star color-gray"></i>
                                 </li>
                             </ul>
                         </a>
                     </article>
-                    <article class="articleGeneral articleList">
-                        <a href="#">
-                            <figure>
-                                <img src="images/hebergements/4_small/febrian1.jpg" alt="Chambre à deux lits avec bureau et télévision">
+                    <article class="article-general article-list box-shadow-one hosting-hover">
+                        <a href="#" class="full-width">
+                            <figure class="margin-zero">
+                                <img src="images/hebergements/4_small/febrian1.jpg" alt="Chambre à deux lits avec bureau et télévision" class="full-width">
                             </figure>
-                            <h3 class="colorBlack">Hôtel chez Amina</h3>
-                            <p class="colorBlack">Nuit à partir de <span class="price">96€</span></p>
+                            <h3 class="color-black">Hôtel chez Amina</h3>
+                            <p class="color-black">Nuit à partir de 96<span class="bold-price">€</span></p>
                             <ul class="starCount">
                                 <li>
-                                    <i data-active="true" class="fa-solid fa-star testBleu" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star color-blue"></i>
                                 </li>
                                 <li>
-                                    <i data-active="true" class="fa-solid fa-star testBleu" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star color-blue"></i>
                                 </li>
                                 <li>
-                                    <i data-active="true" class="fa-solid fa-star testBleu" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star color-blue"></i>
                                 </li>
                                 <li>
-                                    <i data-active="true" class="fa-solid fa-star testBleu" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star color-blue"></i>
                                 </li>
                                 <li>
-                                    <i data-active="true" class="fa-solid fa-star testBleu" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star color-blue"></i>
                                 </li>
                             </ul>
                         </a>
                     </article>
                 </div>
-                <a href="#" class="showMore">Afficher plus</a>
+                <a href="#" class="show-more">Afficher plus</a>
             </div>
-            <aside class="hostingPopular hostingGeneral">
-                <h2>Les plus populaires
-                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+            <aside class="hosting-popular hosting-general back-gray flex-space-between">
+                <h2 class="margin-zero flex-space-between">Les plus populaires
+                    <i class="fa-solid fa-star"></i>
                 </h2>
-                <article class="articleGeneral articlePopular">
-                    <a href="#">
-                        <figure>
-                            <img src="images/hebergements/4_small/emile.jpg" alt="Chambre verte avec miroir">
+                <article class="article-general margin-zero box-shadow-one hosting-hover">
+                    <a class="full-width display-flex" href="#">
+                        <figure class="margin-zero">
+                            <img src="images/hebergements/4_small/emile.jpg" alt="Chambre verte avec miroir" class="full-width">
                         </figure>
-                        <div>
-                            <h3 class="colorBlack">Hôtel Le soleil du matin</h3>
-                            <p class="colorBlack">Nuit à partir de <span class="price">128€</span></p>
+                        <div class="popular-text flex-space-between">
+                            <div>
+                                <h3 class="color-black">Hôtel Le soleil du matin</h3>
+                                <p class="color-black">Nuit à partir de 128<span class="bold-price">€</span></p>
+                            </div>
                             <ul>
                                 <li>
-                                    <i data-active="true" class="fa-solid fa-star testBleu" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star color-blue"></i>
                                 </li>
                                 <li>
-                                    <i data-active="true" class="fa-solid fa-star testBleu" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star color-blue"></i>
                                 </li>
                                 <li>
-                                    <i data-active="true" class="fa-solid fa-star testBleu" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star color-blue"></i>
                                 </li>
                                 <li>
-                                    <i data-active="true" class="fa-solid fa-star testBleu" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star color-blue"></i>
                                 </li>
                                 <li>
-                                    <i data-active="true" class="fa-solid fa-star testBleu" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star color-blue"></i>
                                 </li>
                             </ul>
                         </div>
                     </a>
                 </article>
-                <article class="articleGeneral articlePopular">
-                    <a href="#">
-                        <figure>
-                            <img src="images/hebergements/4_small/aw.jpg" alt="Chambre avec tête de lit capitonée">
+                <article class="article-general margin-zero box-shadow-one hosting-hover">
+                    <a class="full-width display-flex" href="#">
+                        <figure class="margin-zero">
+                            <img src="images/hebergements/4_small/aw.jpg" alt="Chambre avec tête de lit capitonée" class="full-width">
                         </figure>
-                        <div>
-                            <h3 class="colorBlack">Au coeur de l'eau Chambres d'hôtes</h3>
-                            <p class="colorBlack">Nuit à partir de <span class="price">71€</span></p>
+                        <div class="popular-text flex-space-between">
+                            <div>
+                                <h3 class="color-black">Au coeur de l'eau Chambres d'hôtes</h3>
+                                <p class="color-black">Nuit à partir de 71<span class="bold-price">€</span></p>
+                            </div>
                             <ul>
                                 <li>
-                                    <i data-active="true" class="fa-solid fa-star testBleu" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star color-blue"></i>
                                 </li>
                                 <li>
-                                    <i data-active="true" class="fa-solid fa-star testBleu" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star color-blue"></i>
                                 </li>
                                 <li>
-                                    <i data-active="true" class="fa-solid fa-star testBleu" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star color-blue"></i>
                                 </li>
                                 <li>
-                                    <i data-active="true" class="fa-solid fa-star testBleu" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star color-blue"></i>
                                 </li>
                                 <li>
-                                    <i data-active="false" class="fa-solid fa-star testGray" aria-hidden="true"></i>
+                                    <i data-active="false" class="fa-solid fa-star color-gray"></i>
                                 </li>
                             </ul>
                         </div>
                     </a>
                 </article>
-                <article class="articleGeneral articlePopular">
-                    <a href="#" class="centpourcent">
-                        <figure>
-                            <img src="images/hebergements/4_small/febrian2.jpg" alt="Chambre blanche avec tête de lit lumineuse">
+                <article class="article-general margin-zero box-shadow-one hosting-hover">
+                    <a href="#" class="full-width display-flex">
+                        <figure class="margin-zero">
+                            <img src="images/hebergements/4_small/febrian2.jpg" alt="Chambre blanche avec tête de lit lumineuse" class="full-width">
                         </figure>
-                        <div>
-                            <h3 class="colorBlack">Hôtel Tout bleu et Blanc</h3>
-                            <p class="colorBlack">Nuit à partir de <span class="price">68€</span></p>
-                            <ul>
+                        <div class="popular-text flex-space-between">
+                            <div>
+                                <h3 class="color-black">Hôtel Tout bleu et Blanc</h3>
+                                <p class="color-black">Nuit à partir de 68<span class="bold-price">€</span></p>
+                            </div>
+                            <ul class="lll">
                                 <li>
-                                    <i data-active="true" class="fa-solid fa-star testBleu" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star color-blue"></i>
                                 </li>
                                 <li>
-                                    <i data-active="true" class="fa-solid fa-star testBleu" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star color-blue"></i>
                                 </li>
                                 <li>
-                                    <i data-active="true" class="fa-solid fa-star testBleu" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star color-blue"></i>
                                 </li>
                                 <li>
-                                    <i data-active="true" class="fa-solid fa-star testBleu" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star color-blue"></i>
                                 </li>
                                 <li>
-                                    <i data-active="false" class="fa-solid fa-star testGray" aria-hidden="true"></i>
+                                    <i data-active="false" class="fa-solid fa-star color-gray"></i>
                                 </li>
                             </ul>
                         </div>
@@ -320,66 +327,60 @@
         </section>
         <section class="activity" id="activity">
             <h2>Activités à Marseille</h2>
-            <a id="pictureOne" href="#">
-                <div class="">
-                    <img src="" alt="">
+            <div class="articles activity-section flex-space-between">
+                <a href="#" class="full-height column activity-division activity-box box-shadow-two hosting-hover flex-space-between">
+                    <img src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Voiliers et passerelle au quai" class="">
+                    <h3 class="activity-text color-black">Vieux Port</h3>
+                </a>
+                <div class="column activity-division flex-space-between">
+                    <a href="#" class="activity-two column activity-box box-shadow-two hosting-hover flex-space-between">
+                        <img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Chateau de pierre blanche" class="responsive activity-image-two">
+                        <h3 class="activity-text color-black">Fort de Pomègues</h3>
+                    </a>
+                    <a href="#" class="activity-three column activity-box box-shadow-two hosting-hover flex-space-between">
+                        <img src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Lunette de vision avec vue sur une montagne" class="responsive activity-image-three">
+                        <h3 class="activity-text color-black">Îles du Frioul</h3>
+                    </a>
                 </div>
-                <h3>Vieux Port</h3>
-            </a>
-            <a id="pictureTwo" href="#">
-                <div class="">
-                    <img src="" alt="">
+                <a href="#" class="full-height column activity-division activity-box box-shadow-two hosting-hover flex-space-between">
+                    <img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Vue de haut sur une falaise et l'eau">
+                    <h3 class="activity-text color-black">Parc National des Calanques</h3>
+                </a>
+                <div class="column activity-division flex-space-between">
+                    <a href="#" class="activityFive column activity-box box-shadow-two hosting-hover flex-space-between">
+                        <img src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Vue de loin sur une colline" class="responsive activity-image-five-and-six">
+                        <h3 class="activity-text color-black">Notre-Dame-de-la-Garde</h3>
+                    </a>
+                    <a href="#" class="activitySix column activity-box box-shadow-two hosting-hover flex-space-between">
+                        <img src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Vue sur le Parc Longchamp" class="responsive activity-image-five-and-six">
+                        <h3 class="activity-text color-black">Parc Longchamp</h3>
+                    </a>
                 </div>
-                <h3>Fort de Pomègues</h3>
-            </a>
-            <a id="pictureThree" href="#">
-                <div class="">
-                    <img src="" alt="">
-                </div>
-                <h3>Parc National des Calanques</h3>
-            </a>
-            <a id="pictureFour" href="#">
-                <div class="">
-                    <img src="" alt="">
-                </div>
-                <h3>Notre-Dame-de-la-Garde</h3>
-            </a>
-            <a id="pictureFive" href="#">
-                <div class="">
-                    <img src="" alt="">
-                </div>
-                <h3>Île du Frioul</h3>
-            </a>
-            <a id="pictureSix" href="#">
-                <div class="">
-                    <img src="" alt="">
-                </div>
-                <h3>Parc Longchamp</h3>
-            </a>
+            </div>
         </section>
     </main>
     <footer class="footer">
-        <div class="">
-            <div class="">
-                <h3>A propos</h3>
-                <ul>
-                    <li><a href="#">Fonctionnement du site</a></li>
-                    <li><a href="#">Conditions générales de vente</a></li>
-                    <li><a href="#">Données et confidentialité</a></li>
+        <div class="back-gray footer-padding flex-space-between">
+            <div class="footer-section">
+                <h3 class="margin-zero">A propos</h3>
+                <ul class="footer-element">
+                    <li class="footer-line"><a href="#" class="color-black">Fonctionnement du site</a></li>
+                    <li class="footer-line"><a href="#" class="color-black">Conditions générales de vente</a></li>
+                    <li><a href="#" class="color-black">Données et confidentialité</a></li>
                 </ul>
             </div>
-            <div class="">
-                <h3>Nos hébergements</h3>
-                <ul>
-                    <li><a href="#">Charte qualité</a></li>
-                    <li><a href="#">Soumettre votre hôtel</a></li>
+            <div class="footer-section">
+                <h3 class="margin-zero">Nos hébergements</h3>
+                <ul class="footer-element">
+                    <li class="footer-line"><a href="#" class="color-black">Charte qualité</a></li>
+                    <li class="footer-line"><a href="#" class="color-black">Soumettre votre hôtel</a></li>
                 </ul>
             </div>
-            <div class="">
-                <h3>Assistance</h3>
-                <ul>
-                    <li><a href="#">Centre d'aide</a></li>
-                    <li><a href="#">Nous contacter</a></li>
+            <div class="footer-section">
+                <h3 class="margin-zero">Assistance</h3>
+                <ul class="footer-element">
+                    <li class="footer-line"><a href="#" class="color-black">Centre d'aide</a></li>
+                    <li class="footer-line"><a href="#" class="color-black">Nous contacter</a></li>
                 </ul>
             </div>
         </div>

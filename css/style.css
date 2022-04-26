@@ -1,227 +1,98 @@
+/* BOX-SIZING */
+
 * {
     box-sizing: border-box;
    /* box-sizing est appliqué à tous les éléments */
-   }
+}
 
 .box {
     box-sizing: border-box; /* Opera/IE 8+ */
     -moz-box-sizing: border-box; /* Firefox, autres Gecko */
     -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
- }
+}
+
+/* ELEMENTS  */
 
 html {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif; /* Font for the entire web page */
 }
 
 body {
-    margin: 0 auto;
-    max-width: 1430px;
-    padding: 0 50px;
+    max-width: 1430px; /* Max width the page can expand */
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none; /* Delete links decoration */
 }
 
 ul {
-    list-style-type: none;
-}
-
-h2 {
-    margin: 0;
-}
-
-.header_section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 125px;
-}
-
-.navList {
-	display: flex;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-}
-
-.filters {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.infoAbout {
-    display: flex;
-    align-items: center;
-    margin: 20px 0 0 0;
-}
-
-.hosting {
-    display: flex;
-}
-
-.hostingGeneral {
-    display: flex;
-    flex-direction: column;
-    background: #F2F2F2;
-    padding: 40px 40px;
-    border-radius: 25px ;
-    height: 625px;
-}
-
-.articles {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.articleGeneral {
-    display: flex;
-    background-color: white;
-    padding: 5px 5px;
-    border-radius: 18px;
-    box-shadow: 5px 5px 12px 3px rgb(231, 231, 231);
-    margin: 0 0 30px 0;
-}
-
-.articleList {
-    width: 31%;
-}
-
-a.centpourcent {
-    width: 100%;
-}
-
-aside .articlePopular {
-    margin: 0;
-}
-
-.hostingList {
-    margin: 20px 40px 0 0;
-    width: 66%;
-}
-
-.hostingPopular {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0 0 0;
-    width: 33%;
-}
-
-.showMore {
-    margin: 20px 0 0 0 ;
-    color: black;
-    font-weight: 900;
-    font-size: 19px;
-}
-
-div.filters {
-    margin: 30px 0 0 0;
-}
-
-div.filters h2 {
-    font-size: 18px;
-    font-weight: 900;
-    padding: 8px 7px;
-}
-
-.filters div {
-    display: flex;
-    align-items: center;
-    border: 2px solid #D9D9D9;
-    height: 50px;
-    border-radius: 25px;
-    margin-left: 25px;
-}
-
-.filters span {
-    margin: 0 18px 0 0;
-    font-size: 18px;
-    font-weight: 900;
-}
-
-h1 {
-    margin: 0;
-    font-size: 21px;
-    font-weight: 900;
+    list-style-type: none; /* Delete dot in front of list elements */
 }
 
 h3 {
-    margin: 7px 10px 0 10px;
+    margin: 7px 10px 0 10px; /* Name of hotels, activities and footer sections */
     font-size: 16px;
 }
 
-header p {
-    font-weight: 500;
-    margin: 10px 0 20px 0;
-}
-
-article p {
-    margin: 7px 10px 0 10px;
-    font-size: 14px;
-    font-weight: 400;
-}
-
-article img {
-    border-radius: 18px 18px 0 0;
-    height: 115px;
-    object-fit: cover;
-    width: 100%;
-    max-width: 100%;
-    margin: auto;
-}
-
-aside img {
-    border-radius: 18px 0 0 18px;
-    height: 100%;
-    object-fit: cover;
-    width: 100%;
-    max-width: 100%;
-    margin: auto;
-}
-article figure {
-    margin: 0;
-    height: 115px;
-}
-
-aside figure {
-    max-width: 37%;
-    min-width: 37%;
-    height: 135px;
-}
-
-aside h2 {
-    display: flex;
-    justify-content: space-between;
-    font-size: 18px;
-    font-weight: 900;
-}
-
-aside.hostingPopular h2 {
-    margin: 0;
-}
-
-.hosting h2 {
-    margin: 0 0 25px 0;
+h2 {
+    margin: 0 0 25px 0; /* Each section name */
     font-size: 22px;
     font-weight: 900;
 }
 
 form {
     display: flex;
-    margin: 20px 0 30px 0;
+    margin: 20px 0 30px 0; /* Search bar */
 }
 
-aside a {
-    display: flex;
+input {
+    width: 235px;
+    border: 1px solid #F2F2F2; /* Place to enter the city name in the search bar */
+    padding: 0 0 0 15px;
+    font-size: 18px;
+    font-weight: 700;
 }
 
-button.searchButtonOne {
-    display: none;
+nav a {
+    margin-top: -2px; /* Links in the navigation menu */
 }
 
-article ul {
+header p {
+    font-weight: 500;
+    margin: 10px 0 20px 0; /* Paragraphs in the header section */
+}
+
+article p {
+    margin: 7px 10px 0 10px; /* Every paragraph in a content article */
+    font-size: 14px;
+    font-weight: 400;
+}
+
+article img {
+    border-radius: 18px 18px 0 0; /* Images in "Hebergement a Marseille" */
+    height: 115px;
+    object-fit: cover;
+    margin: auto;
+}
+
+aside img {
+    border-radius: 18px 0 0 18px; /* Images in "Les plus populaires */
+    height: 100%;
+    object-fit: cover;
+    margin: auto;
+}
+
+article figure {
+    height: 115px; /* Place for images in "Hebergement a Marseille" */
+}
+
+aside figure {
+    max-width: 37%; /* Place for images in "Les plus populaires" */
+    min-width: 37%;
+    height: 135px;
+}
+
+article ul {         /* Line of stars in hosting section */
     display: flex;
     justify-content: left;
     padding: 0;
@@ -229,59 +100,307 @@ article ul {
     font-size: 12px;
 }
 
-input {
-    width: 235px;
-    border: 1px solid #F2F2F2;
-    padding-left: 15px;
-    font-size: 18px;
-    font-weight: 700;
-}
-
-.articles a {
-    width: 100%;
-}
-
-.testBleu {
-    color: #0065FC;
-}
-
-.testGray {
-    color: #D9D9D9;
-}
-
-.colorBlack {
-    color: black;
-}
-
-header a img {
+header img {            /* Booki Logo */
     width: 110px;
     padding-left: 15px;
 }
 
-nav ul li {
+nav li {                 /* Nav items in the navbar */
+    height: 122px;
+}
+
+nav a{                     /* Links in the navbar */
     display: flex;
     align-items: center;
-    padding: 0 30px 0 30px;
-    height: 122px;
-    border-top: 3px solid #0065FC;
-
-}
-
-nav ul li a{
-    height: 30px;
+    border-top: 3px solid white;
+    height: 100%;
     font-size: 16px;
     font-weight: 500;
+    padding: 0 30px 0 30px;
+    color: black;
 }
 
-i.fa-location-dot {
+footer h3 {              /* Titles in the foter */
+    font-size: 18px;
+    font-weight: 900;
+}
+
+/* CLASSES */
+
+.color-blue {           /* Apply blue color to font */
+    color: #0065FC;
+}
+
+.color-gray {           /* Apply gray color to font */
+    color: #D9D9D9;
+}
+
+.color-black {          /* Apply black color to font */
+    color: black;
+}
+
+.bold-price {            /*Apply bold to price in hosting section */
+    font-weight: 900;
+}
+
+.filter-hover:hover {
+    background-color: #DEEBFF;   /* Hover effect on filters */
+    border-color: #DEEBFF;
+    transition: 1s;
+}
+
+.hosting-hover:hover {              /* Hover effect on hosting section */
+    opacity: 0.7;
+    background-color: #DEEBFF;
+    transition: 0.5s;
+}
+
+.activity {                    /* Margin on copmplete activity section */
+    margin: 60px 0 60px 0;
+}
+
+.page-center {
+    margin: auto;         /* Centering on the page */
+}
+
+.title {
+    font-size: 22px;     /* Font specifications on the first header of the page */
+    font-weight: 900;
+}
+
+.header-section {           /* Logo and navbar specs */
+    align-items: center;
+    height: 125px;
+}
+
+.flex-space-between {   /* Display flex with space between specifications */
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-center {           /* Display flex with center specifications */
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list {        /* Padding for unordered list of the navbar */
+    padding: 0;
+}
+
+.filters {            /* Filters section alignment */
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px 0 0 0;
+}
+
+.info-about {            /* Info section under filters */
+    display: flex;
+    align-items: center;
+    margin: 20px 0 0 0;
+}
+
+.display-flex {        /* Display flex specification */
+    display: flex;
+}
+
+.hosting-general {          /* Generality of hosting section */
+    display: flex;
+    flex-direction: column;
+    padding: 40px 40px;
+    border-radius: 25px ;
+    height: 625px;
+}
+
+.articles {                  /* Hosting and Activity sections */
+    flex-wrap: wrap;
+}
+
+.article-general {              /* Generality of every article */
+    display: flex;
+    background-color: white;
+    padding: 5px 5px;
+    border-radius: 18px;
+    margin: 0 0 30px 0;
+}
+
+.box-shadow-one {
+    box-shadow: 5px 5px 12px 3px rgb(231, 231, 231);   /* Box shadow of hosting section */
+}
+
+.box-shadow-two {
+    box-shadow: 5px 5px 12px 3px rgba(231, 231, 231, 0.568);  /* Box shadow of activity section */
+}
+
+.article-list {  /* Width responsive of every article in hosting section */
+    width: 31%;
+}
+
+.full-width {        /* Make anything full width of his parent */
+    width: 100%;
+}
+
+.full-height {      /* Make anything full height of his parent */
+    height: 100%
+}
+
+.margin-zero {     /* Delete all margin on an element or section */
+    margin: 0;
+}
+
+.hosting-list {
+    margin: 20px 40px 0 0;  /* Sizing and margin of hosting section */
+    width: 66.6%;
+}
+
+.hosting-popular {          /* Sizing and margin of "Les plus populaires" section */
+    margin: 20px 0 0 0;
+    width: 33.3%;
+}
+
+.show-more {               /* Caracteristics of "Afficher plus" in hosting section */
+    margin: 20px 0 0 0 ;
+    color: black;
+    font-weight: 900;
+    font-size: 19px;
+}
+
+.location-dot {            /* Location logo in the search bar */
+    align-items: center;
+    padding: 16px 19px;
+    border-radius: 17px 0 0 17px;
+}
+
+.back-gray {                /* Make backgroud of a section gray */
+    background: #F2F2F2;
+}
+
+.popular-text {              /* Text in "Les plus populaires" section */
+    flex-direction: column;
+    margin: 8px 15px 8px 8px;
+}
+
+.column {
+    flex-direction: column;  /* Change flex direction to column */
+}
+
+.activity-text {            /* Text inactivity section */
+    display: flex;
+    align-items: center;
+    height: 55px;
+    min-height: 55px;
+    align-items: center;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.activity-division {   /* Size of every column in activity section */
+    width: 22.75%;
+}
+
+.activity-section {    /* Entire activity section dimensions */
+    height: 445px;
+    max-height: 445px;
+}
+
+.activity-box {            /* Radius for every activity in activity section */
+    border-radius: 18px;
+}
+
+.activity-two {     /* Specific sizing of second activity */
+    height: 245px;
+}
+
+.activity-three {    /* Specific sizing of third activity */
+    height: 155px;
+}
+
+.activity-image-two {   /* Max height of second activity image */
+    max-height: 190px;
+}
+
+.activity-image-three {  /* Max height of third activity image */
+    max-height: 100px;
+}
+
+.activity-image-five-and-six {  /* Max height of fifth and sixth activity image */
+    max-height: 145px;
+}
+
+.responsive {     /* Make images responsive */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.footer-section {  /* Width of every text column in the footer */
+    width: 32%;
+}
+
+.footer-element {   /* Delete padding in footer element */
+    padding: 0;
+}
+
+.footer-line {             /* Margin for every footer text line */
+    margin-bottom: 15px;
+}
+
+.page-margin {            /* Apply a certain margin on a section of the page */
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.footer-padding {       /* Padding for the footer section */
+    padding: 50px;
+}
+
+/* COMBINED */
+
+.filters div {
+    display: flex;          /* Specificities of every element in the filters section */
+    align-items: center;
+    border: 2px solid #D9D9D9;
+    height: 50px;
+    border-radius: 25px;
+    margin-left: 25px;
+}
+
+.filters span {               /* Text in filters section  */
+    margin: 0 18px 0 0;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.activity img {              /* Images in the activity section */
+    border-radius: 18px 18px 0 0;
+    height: 100%;
+    object-fit: cover;
+}
+
+button.search-button-one {      /* Tablet and Phone search button */
+    display: none;
+}
+
+button.search-button-two {     /* Desktop search button */
+    display: flex;
+    padding: 16px 17px;
+    border-radius: 0 17px 17px 0;
+    background-color: #0065FC;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    border: none;
+}
+
+i.fa-location-dot {   /* Location dot image */
     font-size: 18px;
     text-align: center;
 }
 
-i.filterIcon {
+i.filter-icon {      /* Filters icons specificities */
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     width: 50px;
     height: 50px;
     min-width: 50px;
@@ -293,10 +412,10 @@ i.filterIcon {
     margin: 0 16px 0 -2px;
 }
 
-i.fa-info {
+i.fa-info {           /* Information icon specificities */
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     width: 25px;
     height: 25px;
     font-size: 14px;
@@ -307,26 +426,17 @@ i.fa-info {
     margin: 0 10px 0 3px;
 }
 
-span.locationDot {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 16px 19px;
-    background-color: #F2F2F2;
-    border-radius: 17px 0 0 17px;
+input:focus, textarea:focus, select:focus{  /* Delete outline when search input is clicked */
+    outline: none;
 }
 
-button.searchButtonTwo {
-    display: flex;
-    padding: 16px 17px;
-    border-radius: 0 17px 17px 0;
-    background-color: #0065FC;
-    color: white;
-    font-weight: 500;
+nav li:first-child a, nav a:hover {    /* Effect on the first navbar element and same for the hover effect on the others */
+    border-top: 3px solid #0065FC;
+    color: #0065FC;
+}
+
+div.filters h2 {    /* Filters section name specificities */
     font-size: 18px;
-    border: none;
-}
-
-section.hosting aside {
-    background: #F2F2F2;
+    font-weight: 900;
+    padding: 8px 7px;
 }
