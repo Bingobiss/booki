@@ -1,6 +1,19 @@
 @media (max-width: 991px) {
+
+    input.input-tablet-phone {
+        margin-left: 51.5px;
+        width: 260px;
+        height: 52.39px;
+    }
+
+    .location-dot {
+        position: absolute;
+    }
+    
     button.search-button-one {      /* Show the button for tablet and phone */
         display: flex;
+        position: relative;
+        margin-left: -25px;
     }
     
     button.search-button-two {     /* Hide desktop button */
