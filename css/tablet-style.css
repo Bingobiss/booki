@@ -1,51 +1,6 @@
 @media (max-width: 991px) {
 
-    input.input-tablet-phone {
-        margin-left: 51.5px;
-        width: 260px;
-        height: 52.39px;
-    }
-
-    .location-dot {
-        position: absolute;
-    }
-    
-    button.search-button-one {      /* Show the button for tablet and phone */
-        display: flex;
-        position: relative;
-        margin-left: -25px;
-    }
-    
-    button.search-button-two {     /* Hide desktop button */
-        display: none;
-    }
-
-    .filters span {
-        font-size: 15px;     /* Change filter section dimensions */
-        margin-right: 8px;
-    }
-
-    i.filter-icon {      /* Change filter icons size */
-        width: 35px;
-        height: 35px;
-        min-width: 35px;
-        font-size: 17px;
-        margin: 0 8px 0 -2px;
-    }
-
-    .filters div {          /* Change filter elements size */
-        height: 35px;
-        margin-left: 5px;
-    }
-
-    div.filters h2 {    /* Change filter section title*/
-        font-size: 15px;
-        padding: 8px 5px;
-    }
-
-    #hosting {
-        flex-direction: column-reverse; /*Invert hosting section and popular section */
-    }
+    /* CLASSES  */
 
     .hosting-list {        
         margin-top: 25px;  /* Change hosting elements size */
@@ -55,6 +10,56 @@
     .hosting-popular {
         margin: 5px 0 0 0;   /* change popular elements size */
         width: 100%;
+    }
+
+    .location-dot {
+        position: absolute;   /* Make the location dot in position absolute */
+    }
+
+    #hosting {
+        flex-direction: column-reverse; /*Invert hosting section and popular section */
+    }
+
+    .show-more {     /* Delete the margin for "Afficher plus" */
+        margin: 0;
+    }
+
+    .activity-section {    /* Make actiovity section fit */
+        height: auto;
+        max-height: none;
+    }
+
+    .activity-division {   /* Fill the page (left to right) with the activity division */
+        width: 100%;
+    }
+
+    .activity-box {
+        margin-bottom: 25px;  /* Fix every activity box size */
+        height: 155px;
+    }
+
+    .activity img {      /* Change images height in activity */
+        height: 100px;
+    }
+
+    .footer-element {      /* Change font size in footer elements */
+        font-size: 15px;
+    }
+
+    .footer-section {     /* Change width of every section in the footer */
+        width: 25%;      
+    }
+
+    /* COMBINED */
+
+    .filters span {
+        font-size: 15px;     /* Change filter section dimensions */
+        margin-right: 8px;
+    }
+
+    .filters div {          /* Change filter elements size */
+        height: 35px;
+        margin-left: 5px;
     }
 
     article.article-list {
@@ -67,38 +72,37 @@
         justify-content: space-between;
     }
 
-    .show-more {     /* Delete the margin for "Afficher plus" */
-        margin: 0;
-    }
-
-    div.activity-section {
+    div.activity-section {        /* Make activity section a column */
         display: flex;
         flex-direction: column;
     }
 
-    .activity-section {
-        height: auto;
-        max-height: none;
+    input.input-tablet-phone {
+        margin-left: 51.5px;     /* Change input dimensions with phone and tablet */
+        width: 260px;
+        height: 52.39px;
+    }
+    
+    button.search-button-one {      /* Show the button for tablet and phone */
+        display: flex;
+        position: relative;
+        margin-left: -25px;
+    }
+    
+    button.search-button-two {     /* Hide desktop button */
+        display: none;
     }
 
-    .activity-division {
-        width: 100%;
+    i.filter-icon {      /* Change filter icons size */
+        width: 35px;
+        height: 35px;
+        min-width: 35px;
+        font-size: 17px;
+        margin: 0 8px 0 -2px;
     }
 
-    .activity-box {
-        margin-bottom: 25px;
-        height: 155px;
-    }
-
-    .activity img {
-        height: 100px;
-    }
-
-    .footer-element {
+    div.filters h2 {    /* Change filter section title*/
         font-size: 15px;
-    }
-
-    .footer-section {
-        width: 25%;
+        padding: 8px 5px;
     }
 }
