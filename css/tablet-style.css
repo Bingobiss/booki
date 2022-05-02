@@ -1,4 +1,4 @@
-@media (max-width: 991px) {
+@media (max-width: 992px) {
 
     /* CLASSES  */
 
@@ -35,11 +35,11 @@
 
     .activity-box {
         margin-bottom: 25px;  /* Fix every activity box size */
-        height: 155px;
+        height: 200px;
     }
 
     .activity img {      /* Change images height in activity */
-        height: 100px;
+        height: 150px;
     }
 
     .footer-element {      /* Change font size in footer elements */
@@ -99,6 +99,10 @@
         min-width: 35px;
         font-size: 17px;
         margin: 0 8px 0 -2px;
+    }
+
+    img.activity-image-three {  /* Max height of third activity image */
+        max-height: 150px;
     }
 
     div.filters h2 {    /* Change filter section title*/
